@@ -31,10 +31,10 @@ export default function footer(){
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item sm={3} xs={12} className="footer-right">
+            <Grid item sm={3} xs={4} className="footer-right">
                 <Grid container spacing={0}>
                     <Grid item xs={4}>
-                        <IconButton>
+                        <IconButton >
                             <InstagramIcon />
                         </IconButton>
                     </Grid>
