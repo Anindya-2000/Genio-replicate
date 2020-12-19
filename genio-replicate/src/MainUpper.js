@@ -222,6 +222,82 @@ const useStyles = makeStyles((theme) => ({
         },
 
     },
+
+    section4:{
+        padding:"0px 30px 0px",
+        marginBottom:"20px",
+        backgroundColor:"rgba(255, 215.59, 209.619, 1)",
+        [theme.breakpoints.down("md")]:{
+            paddingLeft:"0px",
+            paddingRight:"0px",
+            paddingBottom:"50px",
+        },
+        [theme.breakpoints.down("sm")]:{
+            paddingBottom:"0px",
+        },
+    },
+
+    subsection4:{
+        paddingLeft:"50%",
+        paddingTop:"10%",
+        [theme.breakpoints.down("md")]:{
+            paddingLeft:"30%",
+            paddingTop:"10%",
+        },
+        [theme.breakpoints.down("sm")]:{
+            paddingLeft:"10%",
+            paddingTop:"20%",
+        },
+        [theme.breakpoints.down("xs")]:{
+            alignItems:"center",
+            textAlign:"center",
+            padding:"3% 10%",
+        }
+    },
+    subsection4_text1:{
+        color:"#35423c",
+        fontWeight:"500",
+        fontSize:"2.0em",
+        lineHeight:"1.1em",
+        margin:"0 0 8px",
+        whiteSpace:"pre-line",
+        textAlign:"left",
+        maxWidth:"300px",
+        [theme.breakpoints.down("xs")]:{
+            textAlign:"center",
+            fontSize:"23pt"
+        }
+    },
+    subsection4_text2:{
+        color:"#5b7167",
+        fontWeight:400,
+        fontSize:"1em",
+        lineHeight:"1.5",
+        margin:0,
+        whiteSpace:"pre-line",
+        textAlign:"left",
+        maxWidth:"330px",
+        [theme.breakpoints.down("xs")]:{
+            textAlign:"center", 
+            fontSize:"12pt"
+        }
+    },
+    childImg4:{
+        maxWidth:"100%",
+        paddingLeft:50,
+        [theme.breakpoints.down("md")]:{
+            maxWidth:"85%",
+        },
+        [theme.breakpoints.down("sm")]:{
+            marginTop:20,
+            padding:"25px",
+            maxWidth:"75%",
+        },
+        [theme.breakpoints.down("xs")]:{
+            maxWidth:"85%",
+        },
+
+    },
 }));
 
 const MainUpper = () =>{
@@ -312,6 +388,29 @@ const MainUpper = () =>{
                         </Grid>
                     </Grid>
                 </Box>
+            </Grid>
+        </Grid>
+
+        <Grid item>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#ffd8d2" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path></svg>
+            <Grid container direction = "row" className = {classes.section4}>
+                <Grid item lg={6} md sm={6} xs={12}>
+                    <Grid container direction="column" className = {classes.subsection4}>
+                        <Grid item>
+                            <p className = {classes.subsection4_text1}>
+                                Showcase and Get Feedback
+                            </p>
+                        </Grid>
+                        <Grid item>
+                            <p className={classes.subsection4_text2}>
+                                Upload your kid's work to get feedback from kids and parents across the world
+                            </p>
+                        </Grid>
+                    </Grid>        
+                </Grid>
+                <Grid item lg={6} md sm={6} xs={12} align="center">
+                    <img src = "https://landen.imgix.net/lv76colfak30/assets/j81wx7m5.png?w=350&h=350" className={classes.childImg4}></img> 
+                </Grid>
             </Grid>
         </Grid>
       </Grid>
