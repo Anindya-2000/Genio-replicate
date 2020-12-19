@@ -1,0 +1,20 @@
+.root{
+    background-color: rgb(19, 92, 175);
+}
+
+.footer-link{
+    color: white !important;
+}
+
+.footer-left{
+    padding: 2vw 4vw;
+}
+
+.copyright{
+    color: white;
+}
+
+.footer-right{
+    padding: 2vw; 
+    color: white;
+}
