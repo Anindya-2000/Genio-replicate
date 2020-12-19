@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Footer from './footer.js';
+import Gplay from './gplay';
+import Improve from './improve'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <Improve />
+  <Gplay />
+  <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
