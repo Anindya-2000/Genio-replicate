@@ -1,0 +1,29 @@
+.gplay-text{
+    color: #35423c;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    padding: 4vw;
+}
+
+.gplay{
+    max-width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gplay-container{
+    text-align: center;
+    padding-bottom: 12vw;
+}
+
+@media only screen and (max-width: 500px){
+    .gplay-text{
+        padding: 9vw 1vw;
+    }
+    .gplay{
+        max-width: 50vw;
+    }
+    .gplay-container{
+        padding-bottom: 30vw;
+    }
+}
