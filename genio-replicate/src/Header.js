@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex:500,
         height:70,
         alignItems:"center",
-    },
+    },         
     logo:{
         width:200,
         color:"#51a3ff",
