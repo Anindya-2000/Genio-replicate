@@ -7,33 +7,33 @@ export default function improve(){
     return(
         <Grid container spacing={0}>
             
-                <Grid item sm={6} xs={12}>
+                <Grid item sm={6} xs={12} className="image">
                     <img src='img/sitting.png' className="sitting-img" alt="" />
                 </Grid>
-                <Grid item sm={6} xs={12}>
-                    <Grid container spacing={0} className="text">
+                <Grid item sm={6} xs={12} className="text">
+                    <Grid container spacing={0} >
                         <Grid item xs={12} >
-                            <Typography variant="h4">Improve your kid's knowledge</Typography>
+                            <Typography variant="h4" className="top-text">Improve your kid's knowledge</Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant="body1">Quizzes, News and much more...</Typography>
+                            <Typography variant="h6" className="light">Quizzes, News and much more...</Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Grid container spacing={0}>
                                 <Grid item xs={1}>
-                                    <DoneIcon />
+                                    <DoneIcon className="tick"/>
                                 </Grid>
                                 <Grid item xs={3}>
                                     <Typography variant="body2">Curated</Typography>
                                 </Grid>
                                 <Grid item xs={1}>
-                                    <DoneIcon />
+                                    <DoneIcon className="tick"/>
                                 </Grid>
                                 <Grid item xs={3}>
                                     <Typography variant="body2">Curated</Typography>
                                 </Grid>
                                 <Grid item xs={1}>
-                                    <DoneIcon />
+                                    <DoneIcon className="tick"/>
                                 </Grid>
                                 <Grid item xs={3}>
                                     <Typography variant="body2">Curated</Typography>
