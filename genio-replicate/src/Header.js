@@ -2,7 +2,10 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import {makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-
+import Box from "@material-ui/core/Box";
+import Drawer from './Drawer.js';
+import './Drawer.css';
+import {useState,setState} from 'react';
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -51,25 +54,56 @@ const useStyles = makeStyles((theme) => ({
             bottom:1,
         },
     },
+    Drawer:{
+        position:"absolute",
+        right:30,
+    },
 
 }));
 
 
 const Header = () => {
     const classes = useStyles();
+    const [isOpen,setIsOpen] = useState(false);
+
+    const DropDown = (val) =>{
+        const DD = document.getElementsByClassName('headerMenu__wrapper')[0];
+        if(val){
+            DD.classList.add('DD_animation');
+        }
+        else{
+            DD.classList.remove('DD_animation');
+        }
+    }
+
     return (
         <Grid container className={classes.root}>
             <Grid item  style = {{"position":"absolute"}}>
                 <img src = "https://landen.imgix.net/lv76colfak30/assets/xcwpfkou.png?w=400" className = {classes.logo}></img>
             </Grid>
 
-            <Grid item className = {classes.downloadItem}>
+            <Box component = {Grid} item className = {classes.downloadItem} display = {{xs:"none",sm:"block"}}>
                 <a href="#" style={{"textDecoration":"none"}}>
                     <Button disableRipple={true} className={classes.downloadBtn} style={{ backgroundColor: 'transparent' }}>
                         Download App
                     </Button>
                 </a>
-            </Grid>
+            </Box>
+
+            <Box component={Grid} item display = {{lg:"none",md:"none",sm:"none"}} className = {classes.Drawer}><Drawer isOpen = {isOpen} setIsOpen = {setIsOpen} DropDown = {DropDown}/></Box>
+    
+            <div className = "headerMenu__wrapper" style = {{"background-color":"#ffffff"}}>
+                <ul className = "headerMenu__links">
+                    <li>
+                        <a className = "drawerLink" href = "#">
+                            Download App
+                            <svg width = "13" height = "12" xmlns = "http://www.w3.org/2000/svg">
+                                <path d = "M9.557 7H1a1 1 0 1 1 0-2h8.586L7.007 2.421a1 1 0 0 1 1.414-1.414l4.243 4.243c.203.202.3.47.292.736a.997.997 0 0 1-.292.735L8.42 10.964A1 1 0 1 1 7.007 9.55L9.557 7z" fill = "#51a3ff"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </Grid>
     );
 };
