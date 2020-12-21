@@ -10,7 +10,6 @@ import Improve from './improve'
 ReactDOM.render(
   <React.StrictMode>
   <App />
-  <Improve />
   <Gplay />
   <Footer />
   </React.StrictMode>,
