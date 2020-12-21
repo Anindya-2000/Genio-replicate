@@ -5,6 +5,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import Box from "@material-ui/core/Box";
+import DoneIcon from '@material-ui/icons/Done';
 
 const useStyles = makeStyles((theme) => ({
     MainRoot:{
@@ -221,6 +222,7 @@ const useStyles = makeStyles((theme) => ({
     section4:{
         padding:"0px 30px 0px",
         marginBottom:"20px",
+        marginTop: "-2vw",
         backgroundColor:"rgba(255, 215.59, 209.619, 1)",
         [theme.breakpoints.down("md")]:{
             paddingLeft:"0px",
@@ -297,7 +299,93 @@ const useStyles = makeStyles((theme) => ({
         position: "absolute",
         bottom:"-3px",
         zIndex:-10000,
-    }
+    },
+    section5:{
+        marginTop:40,
+    },
+    subsection5:{
+        paddingRight:"30%",
+        paddingTop:"25%",
+        [theme.breakpoints.down("md")]:{
+            padding:"10%",
+            paddingTop:"25%",
+        },
+        [theme.breakpoints.down("sm")]:{
+            padding:"25% 5% 0 5%",
+        },
+        [theme.breakpoints.down("xs")]:{
+            alignItems:"center",
+            textAlign:"center",
+            padding:"3% 10% 0",
+        }
+    },
+    subsection5_text1:{
+        color:"#35423c",
+        fontWeight:"300",
+        fontSize:"2.2em",
+        lineHeight:"1.3em",
+        margin:"0 0 5px",
+        whiteSpace:"pre-line",
+        textAlign:"left",
+        [theme.breakpoints.down("xs")]:{
+            textAlign:"center",
+            fontSize:"23pt"
+        }
+    },
+    subsection5_text2:{
+        color:"#5b7167",
+        fontWeight:400,
+        fontSize:"1.2em",
+        lineHeight:"1.5",
+        marginBottom:30,
+        whiteSpace:"pre-line",
+        textAlign:"left",
+        [theme.breakpoints.down("xs")]:{
+            textAlign:"center", 
+            fontSize:"12pt"
+        }
+    },
+    // subsection5_text3:{
+    //     color:"#5b7167",
+    //     fontWeight:400,
+    //     fontSize:"1.15em",
+    //     lineHeight:"1.5",
+    //     margin:0,
+    //     whiteSpace:"pre-line",
+    //     textAlign:"left",
+    //     [theme.breakpoints.down("xs")]:{
+    //         textAlign:"center", 
+    //         fontSize:"12pt"
+    //     }
+    // },
+    subsection5_list:{
+        display: "flex",
+        flexWrap: "wrap",
+        fontSize: "1em",
+        fontWeight: 400,
+        color: "#5b7167",
+    },
+    subsection5_list_item:{
+        marginRight: 20,
+        marginBottom: 20,
+    },
+    childImg5:{
+        maxWidth:"85%",
+        paddingLeft:50,
+        [theme.breakpoints.down("md")]:{
+            maxWidth:"85%",
+        },
+        [theme.breakpoints.down("sm")]:{
+            marginTop:20,
+            padding:"25px",
+        },
+        [theme.breakpoints.down("xs")]:{
+            maxWidth:"80%",
+            paddingLeft:"30px",
+            paddingTop:0,
+        },
+
+    },
 }));
 
 const MainUpper = () =>{
@@ -389,10 +477,10 @@ const MainUpper = () =>{
                     </Grid>
                 </Box>
             </Grid>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd8d2" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path></svg>
         </Grid>
 
-        <Grid item>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#ffd8d2" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path></svg>
+        <Grid item> 
             <Grid container direction = "row" className = {classes.section4}>
                 <Grid item lg={6} md sm={6} xs={12}>
                     <Grid container direction="column" className = {classes.subsection4}>
@@ -413,6 +501,58 @@ const MainUpper = () =>{
                 </Grid>
             </Grid>
         </Grid>
+
+        <Grid item>
+            <Grid container direction = "row" className={classes.section5}>
+                <Box component = {Grid} item lg={6} md sm={6} xs={12} display={{lg:"none",md:"none",sm:"none"}}>
+                     <Grid container direction="column" className = {classes.subsection5}>
+                        <Grid item>
+                            <p className = {classes.subsection5_text1}>
+                                Improve your Kid's Knowledge
+                            </p>
+                        </Grid>
+                        <Grid item>
+                            <p className={classes.subsection5_text2}>
+                                Quizzes, News and much more.....
+                            </p>
+                        </Grid>
+                         <Grid item>
+                            <div className={classes.subsection5_list}>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Curated</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Informational</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Safe for children</div>
+                            </div>
+                        </Grid> 
+                        
+                    </Grid>
+                </Box>
+                <Grid item lg={6} md sm={6} xs={12}>
+                    <img src = "img/sitting.png" className={classes.childImg5}></img>
+                </Grid>
+                <Box component = {Grid} item lg={6} md sm={6} xs={12} display={{xs:"none",lg:"block",md:"block",sm:"block"}}>
+                     <Grid container direction="column" className = {classes.subsection5}>
+                        <Grid item>
+                            <p className = {classes.subsection5_text1}>
+                                Improve your kid's knowledge
+                            </p>
+                        </Grid>
+                        <Grid item>
+                            <p className={classes.subsection5_text2}>
+                                Quizzes, News and much more.....
+                            </p>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <div className={classes.subsection5_list}>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Curated</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Informational</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Safe for children</div>
+                            </div>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Grid>
+        </Grid>
+
       </Grid>
   )
 };
