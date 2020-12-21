@@ -1,8 +1,10 @@
 .gplay-text{
     color: #35423c;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding: 4vw;
+    font-size: 28pt !important;
+    text-align: center;
 }
 
 .gplay{
