@@ -2,7 +2,6 @@
     position:relative;
     width: 34px;
     height: 34px;
-    margin-right: 20px;
     outline: none;
 }
 
@@ -45,7 +44,6 @@
     display: none;
     cursor: pointer;
     position: relative;
-    float: right;
     max-width: 100%;
     width: 95%;
     margin:auto;
@@ -54,8 +52,6 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 50px 100px -12px rgba(0,0,0,.15), 0 30px 60px -30px rgba(0,0,0,.08), 0 0 20px rgba(0,0,0,.1);
-    animation: headerDrawer .15s ease-out;
-    transition: display 3s linear,margin-top 2s linear;
 }
 
 .headerMenu__links{
@@ -81,7 +77,8 @@
 }
 
 .DD_animation{
-    margin-top: 60px;
-    display: block;
+    transition: margin 10s linear;
+    margin-top: 60px !important;
+    display: block !important;
 }
 
