@@ -158,6 +158,7 @@ const useStyles = makeStyles((theme) => ({
     },
     section3:{
         marginTop:40,
+        marginBottom:50,
     },
     subsection3:{
         paddingRight:"30%",
@@ -443,7 +444,7 @@ const MainUpper = () =>{
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style = {{"position":"relative","bottom":"3px"}}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,106.7C640,96,800,64,960,64C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
         </Grid>
 
-        <Grid item>
+        <Grid item style = {{"position":"relative"}}>
             <Grid container direction = "row" className={classes.section3}>
                 <Box component = {Grid} item lg={6} md sm={6} xs={12} display={{lg:"none",md:"none",sm:"none"}}>
                      <Grid container direction="column" className = {classes.subsection3}>
@@ -477,7 +478,7 @@ const MainUpper = () =>{
                     </Grid>
                 </Box>
             </Grid>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd8d2" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style = {{"position":"absolute","bottom":"0px"}}><path fill="#ffd8d2" fill-opacity="1" d="M0,288L1440,224L1440,320L0,320Z"></path></svg>
         </Grid>
 
         <Grid item> 
