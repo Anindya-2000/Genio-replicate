@@ -73,6 +73,7 @@ const Header = () => {
                     rotateDivs();
             }
         })
+        return false;
     },[1]);
 
     const DropDown = (val) =>{

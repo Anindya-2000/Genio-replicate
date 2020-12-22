@@ -1,6 +1,4 @@
 [1219/083304.351:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
-<<<<<<< HEAD
 [1221/100453.011:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
-=======
 [1221/101044.475:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
->>>>>>> 8726d544c84bd4ff79ce5e0ac9d4a055a8f40873
+[1222/101145.280:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
