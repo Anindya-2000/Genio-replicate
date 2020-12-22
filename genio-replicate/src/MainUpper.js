@@ -241,7 +241,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 50,
         [theme.breakpoints.down("md")]:{
             paddingLeft:"30%",
-            paddingTop:"10%",
+            paddingTop:"20%",
         },
         [theme.breakpoints.down("sm")]:{
             paddingLeft:"10%",
@@ -256,8 +256,9 @@ const useStyles = makeStyles((theme) => ({
     },
     subsection4_text1:{
         color:"#35423c",
-        fontWeight:"500",
-        fontSize:"2.0em",
+        fontFamily: "'Montserrat', sans-serif",
+        fontWeight:"600",
+        fontSize:"1.9em",
         lineHeight:"1.1em",
         margin:"0 0 8px",
         whiteSpace:"pre-line",
@@ -284,18 +285,20 @@ const useStyles = makeStyles((theme) => ({
     },
     childImg4:{
         maxWidth:"100%",
-        paddingLeft:50,
-        marginTop: 50,
+        marginTop: 80,
+        marginLeft: 50,
+        paddingBottom: "8%",
         [theme.breakpoints.down("md")]:{
             maxWidth:"85%",
         },
         [theme.breakpoints.down("sm")]:{
-            marginTop:20,
+            marginTop:50,
             padding:"25px",
             maxWidth:"75%",
         },
         [theme.breakpoints.down("xs")]:{
             maxWidth:"85%",
+            marginLeft: 0,
         },
 
     },
@@ -341,7 +344,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight:400,
         fontSize:"1.2em",
         lineHeight:"1.5",
-        marginBottom:30,
+        margin:"5px 0px 20px 0px",
         whiteSpace:"pre-line",
         textAlign:"left",
         [theme.breakpoints.down("xs")]:{
@@ -365,6 +368,7 @@ const useStyles = makeStyles((theme) => ({
     subsection5_list:{
         display: "flex",
         flexWrap: "wrap",
+        alignItems: "center",
         fontSize: "1em",
         fontWeight: 400,
         color: "#5b7167",
@@ -372,6 +376,10 @@ const useStyles = makeStyles((theme) => ({
     subsection5_list_item:{
         marginRight: 20,
         marginBottom: 20,
+    },
+    tick:{
+        color: "#66a766",
+        width: 21,
     },
     childImg5:{
         maxWidth:"85%",
@@ -500,7 +508,7 @@ const MainUpper = () =>{
                         </Grid>
                     </Grid>        
                 </Grid>
-                <Grid item lg={6} md sm={6} xs={12} align="center">
+                <Grid item lg={6} md sm={6} xs={12} align="left" justify="center">
                     <img src = "https://landen.imgix.net/lv76colfak30/assets/j81wx7m5.png?w=350&h=350" className={classes.childImg4}></img> 
                 </Grid>
             </Grid>
@@ -522,9 +530,9 @@ const MainUpper = () =>{
                         </Grid>
                          <Grid item>
                             <div className={classes.subsection5_list}>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Curated</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Informational</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Safe for children</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Curated</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Informational</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Safe for children</div>
                             </div>
                         </Grid> 
                         
@@ -547,9 +555,9 @@ const MainUpper = () =>{
                         </Grid>
                         <Grid item xs={12}>
                             <div className={classes.subsection5_list}>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Curated</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Informational</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className="tick" />Safe for children</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Curated</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Informational</div>
+                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Safe for children</div>
                             </div>
                         </Grid>
                     </Grid>
