@@ -294,6 +294,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("sm")]:{
             marginTop:50,
             padding:"25px",
+            paddingRight: 0,
+            paddingLeft: 20,
             maxWidth:"75%",
         },
         [theme.breakpoints.down("xs")]:{
