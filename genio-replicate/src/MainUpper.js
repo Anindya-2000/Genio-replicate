@@ -286,7 +286,7 @@ const useStyles = makeStyles((theme) => ({
     childImg4:{
         maxWidth:"100%",
         marginTop: 80,
-        marginLeft: 50,
+        // marginLeft: 50,
         paddingBottom: "8%",
         [theme.breakpoints.down("md")]:{
             maxWidth:"85%",
@@ -300,7 +300,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down("xs")]:{
             maxWidth:"85%",
-            marginLeft: 0,
+            margin: 0,
         },
 
     },
@@ -510,7 +510,7 @@ const MainUpper = () =>{
                         </Grid>
                     </Grid>        
                 </Grid>
-                <Grid item lg={6} md sm={6} xs={12} align="left" justify="center">
+                <Grid item lg={6} md sm={6} xs={12} align="center" justify="center">
                     <img src = "https://landen.imgix.net/lv76colfak30/assets/j81wx7m5.png?w=350&h=350" className={classes.childImg4}></img> 
                 </Grid>
             </Grid>
