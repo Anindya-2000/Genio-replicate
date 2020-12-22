@@ -79,6 +79,16 @@
 .DD_animation{
     transition: margin 10s linear;
     margin-top: 60px !important;
-    display: block !important;
+    display: block;
 }
 
+.drawerLink:hover{
+    text-decoration: underline;
+    text-decoration-color: #51a3ff;
+}
+
+@media only screen and (min-width:600px){
+    .headerMenu__wrapper{
+        display: none !important;
+    }
+}
