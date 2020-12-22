@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
+.root-cont{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 
 .gplay-text{
@@ -32,5 +36,11 @@
     }
     .gplay-container{
         padding-bottom: 30vw;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .root-cont{
+        padding: 0;
     }
 }

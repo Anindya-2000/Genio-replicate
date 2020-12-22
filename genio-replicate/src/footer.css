@@ -4,6 +4,8 @@
 .root{
     background-color: rgb(19, 92, 175);
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .footer-link{
@@ -45,7 +47,7 @@
     font-size: 26px;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 830px){
     .footer-right{
         padding: 0 0 10px 0;
     }
