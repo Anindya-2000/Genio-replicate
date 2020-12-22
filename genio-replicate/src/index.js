@@ -7,7 +7,7 @@ import Footer from './footer.js';
 import Gplay from './gplay';
 import Improve from './improve'
 
-ReactDOM.render(
+ReactDOM.render(      
   <React.StrictMode>
   <App />
   <Gplay />

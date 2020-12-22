@@ -5,7 +5,6 @@ import {makeStyles} from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import Box from "@material-ui/core/Box";
-import './SvgCss.css';
 import DoneIcon from '@material-ui/icons/Done';
 
 const useStyles = makeStyles((theme) => ({
@@ -15,19 +14,17 @@ const useStyles = makeStyles((theme) => ({
         height:"auto",
     },
     section1:{
-        padding:"10px 30px 40px",
+        padding:"50px 30px 40px",
         [theme.breakpoints.down("md")]:{
             paddingLeft:"0px",
             paddingRight:"0px",
             paddingTop:"50px",
         },
-        [theme.breakpoints.down("sm")]:{
-            paddingBottom:80
-        },
     },
     subsection1:{
         paddingLeft:"40%",
         paddingTop:"10%",
+        paddingBottom:"150px",
         [theme.breakpoints.down("md")]:{
             paddingLeft:"25%",
             paddingTop:"3%",
@@ -88,12 +85,10 @@ const useStyles = makeStyles((theme) => ({
     },
     section2:{
         padding:"0px 30px 0px",
-        marginTop:"20px",
         backgroundColor:"rgba(201, 231, 252, 1)",
         [theme.breakpoints.down("md")]:{
             paddingLeft:"0px",
             paddingRight:"0px",
-            paddingTop:"50px",
         },
         [theme.breakpoints.down("sm")]:{
             paddingTop:"0px",
@@ -300,7 +295,11 @@ const useStyles = makeStyles((theme) => ({
         },
 
     },
-
+    section1Svg:{
+        position: "absolute",
+        bottom:"-3px",
+        zIndex:-10000,
+    },
     section5:{
         marginTop:40,
     },
@@ -393,7 +392,7 @@ const MainUpper = () =>{
   const classes = useStyles();
   return (
       <Grid container direction = "column" className={classes.MainRoot}>
-        <Grid item>
+        <Grid item style = {{"position":"relative"}}>
           <Grid container direction = "row" className = {classes.section1}>
             <Grid item lg={7} md sm={7} xs={12}>
                 <Grid container direction="column" className = {classes.subsection1}>
@@ -418,7 +417,7 @@ const MainUpper = () =>{
               <img src = "https://landen.imgix.net/lv76colfak30/assets/vxv9jwpl.png?w=1200&h=900&fit=max" className={classes.childImg1}></img>
             </Grid>
           </Grid>   
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="section1Svg"><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,64C1120,21,1280,11,1360,5.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className={classes.section1Svg}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,64C1120,21,1280,11,1360,5.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
         </Grid>
         
         <Grid item>
@@ -441,7 +440,7 @@ const MainUpper = () =>{
                     <img src = "https://landen.imgix.net/lv76colfak30/assets/hewjjvi0.png?w=350&h=350" className={classes.childImg2}></img> 
                 </Grid>
             </Grid>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,106.7C640,96,800,64,960,64C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style = {{"position":"relative","bottom":"3px"}}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,106.7C640,96,800,64,960,64C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
         </Grid>
 
         <Grid item>
