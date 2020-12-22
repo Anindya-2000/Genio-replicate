@@ -221,7 +221,6 @@ const useStyles = makeStyles((theme) => ({
 
     section4:{
         padding:"0px 30px 0px",
-        marginBottom:"20px",
         marginTop: "-2vw",
         backgroundColor:"rgba(255, 215.59, 209.619, 1)",
         [theme.breakpoints.down("md")]:{
@@ -236,7 +235,9 @@ const useStyles = makeStyles((theme) => ({
 
     subsection4:{
         paddingLeft:"50%",
-        paddingTop:"10%",
+        paddingTop:"15%",
+        paddingBottom: "15%",
+        marginTop: 50,
         [theme.breakpoints.down("md")]:{
             paddingLeft:"30%",
             paddingTop:"10%",
@@ -249,6 +250,7 @@ const useStyles = makeStyles((theme) => ({
             alignItems:"center",
             textAlign:"center",
             padding:"3% 10%",
+            marginTop: 70,
         }
     },
     subsection4_text1:{
@@ -282,6 +284,7 @@ const useStyles = makeStyles((theme) => ({
     childImg4:{
         maxWidth:"100%",
         paddingLeft:50,
+        marginTop: 50,
         [theme.breakpoints.down("md")]:{
             maxWidth:"85%",
         },
