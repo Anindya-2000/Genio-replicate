@@ -31,24 +31,16 @@ export default function footer(){
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item sm={3} xs={4} className="footer-right">
-                <Grid container spacing={0}>
-                    <Grid item xs={4}>
-                        <IconButton >
-                            <InstagramIcon />
-                        </IconButton>
-                    </Grid>
-                    <Grid item xs={4}>
-                        <IconButton>
-                            <LinkedInIcon/>
-                        </IconButton>
-                    </Grid>
-                    <Grid item xs={4}>
-                        <IconButton>
-                            <FacebookIcon />
-                        </IconButton>
-                    </Grid>
-                </Grid>
+            <Grid item sm={3} xs={12} className="footer-right">
+                <IconButton >
+                    <InstagramIcon className="button"/>
+                </IconButton>
+                <IconButton>
+                    <LinkedInIcon className="button"/>
+                </IconButton>
+                <IconButton>
+                    <FacebookIcon className="button"/>
+                </IconButton>
             </Grid>
         </Grid>
     );
