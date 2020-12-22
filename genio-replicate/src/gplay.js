@@ -10,7 +10,7 @@ export default function gplay(){
                     <p className="gplay-text">Start your kid's journey</p>"
                 </Grid>
                 <Grid item xs={12} className="gplay-container">
-                    <img src="img/google_play_logo.png" alt="" className="gplay"/>
+                    <img src="img/google-play-en.png" alt="" className="gplay"/>
                 </Grid>
             </Container>
         </Grid>
