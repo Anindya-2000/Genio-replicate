@@ -21,7 +21,7 @@ export default function footer(){
     const classes= styles();
     return(
         <Grid container spacing={0} className="root">
-            <Grid item sm={9} xs={12}>
+            <Grid item md={9} sm={6} xs={12}>
                 <Grid container spacing={0} className="footer-left">
                     <Grid item xs={12}>
                         {/* <Typography className="copyright">
@@ -46,7 +46,7 @@ export default function footer(){
                     </div>
                 </Grid>
             </Grid>
-            <Grid item sm={3} xs={12} className="footer-right">
+            <Grid item md={3} sm={6} xs={12} className="footer-right">
                 <IconButton >
                     <TwitterIcon fontSize="large" className="icon"/>
                 </IconButton>
