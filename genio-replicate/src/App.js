@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Header';
-import MainUpper from './MainUpper';
-
-const App = () =>{
+import loadable from '@loadable/component'
+const Header = loadable(() => import('./Header'));
+const MainUpper = loadable(() => import('./MainUpper'));
+const App = () => {
   return (
     <div>
-      <Header/>
-      <MainUpper/>
+      <Header />
+      <MainUpper />
     </div>
   )
 };
