@@ -9,8 +9,7 @@ import Improve from './improve'
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Gplay />
-    <Footer />
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
