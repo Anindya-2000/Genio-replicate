@@ -112,10 +112,10 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-                <div style={{ display: 'flex' }}>
+                <a href={'/'} style={{ display: 'flex', textDecoration:'none', color:'inherit' }}>
                     <img src="https://d5c8j8afeo6fv.cloudfront.net/logo.png" className={classes.logo}></img>
                     <p style={{ fontSize: 40, fontFamily: 'Finger Paint' }}>GENIO</p>
-                </div>
+                </a>
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>

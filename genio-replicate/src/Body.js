@@ -430,7 +430,7 @@ const Body = () => {
                         </Grid>
                     </Grid>
                     <Grid item lg={5} md sm={5} xs={12}>
-                        <img src="img/two-childs.png" className={classes.childImg1}></img>
+                        <img src="https://d5c8j8afeo6fv.cloudfront.net/Kids.png" className={classes.childImg1}></img>
                     </Grid>
                 </Grid>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className={classes.section1Svg}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,64C1120,21,1280,11,1360,5.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
@@ -453,7 +453,7 @@ const Body = () => {
                         </Grid>
                     </Grid>
                     <Grid item lg={6} md sm={6} xs={12} align="center">
-                        <img src="img/discuss.png" className={classes.childImg2}></img>
+                        <img src="https://d5c8j8afeo6fv.cloudfront.net/hello.png" className={classes.childImg2}></img>
                     </Grid>
                 </Grid>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style={{ "position": "relative", "bottom": "3px" }}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,106.7C640,96,800,64,960,64C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
@@ -476,7 +476,7 @@ const Body = () => {
                         </Grid>
                     </Box>
                     <Grid item lg={6} md sm={6} xs={12}>
-                        <img src="img/ideas.png" className={classes.childImg3}></img>
+                        <img src="https://d5c8j8afeo6fv.cloudfront.net/ideas.png" className={classes.childImg3}></img>
                     </Grid>
                     <Box component={Grid} item lg={6} md sm={6} xs={12} display={{ xs: "none", lg: "block", md: "block", sm: "block" }}>
                         <Grid container direction="column" className={classes.subsection3}>
@@ -513,7 +513,7 @@ const Body = () => {
                         </Grid>
                     </Grid>
                     <Grid item lg={6} md sm={6} xs={12} align="center" justify="center">
-                        <img src="img/icons.png" className={classes.childImg4}></img>
+                        <img src="https://d5c8j8afeo6fv.cloudfront.net/icons.png" className={classes.childImg4}></img>
                     </Grid>
                 </Grid>
             </Grid>
@@ -564,7 +564,7 @@ const Body = () => {
                         </Grid>
                     </Box>
                     <Grid item lg={6} md sm={6} xs={12}>
-                        <img src="img/sitting.png" className={classes.childImg5}></img>
+                        <img src="https://d5c8j8afeo6fv.cloudfront.net/sitting.png" className={classes.childImg5}></img>
                     </Grid>
                     <Box component={Grid} item lg={6} md sm={6} xs={12} display={{ xs: "none", lg: "block", md: "block", sm: "block" }}>
                         <Grid container direction="column" className={classes.subsection5}>
