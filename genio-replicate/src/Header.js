@@ -18,10 +18,12 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center",
     },
     logo: {
-        width: 200,
+        width: 67,
         color: "#51a3ff",
         borderStyle: "none",
+        marginTop:33,
         paddingLeft: 200,
+        height: 67,
         [theme.breakpoints.down("1300")]: {
             paddingLeft: 30
         }
@@ -109,7 +111,10 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-                <img src="img/genio.png" className={classes.logo}></img>
+                <div style={{ display: 'flex' }}>
+                    <img src="https://d5c8j8afeo6fv.cloudfront.net/logo.png" className={classes.logo}></img>
+                    <p style={{ fontSize: 40, fontFamily: 'Finger Paint' }}>GENIO</p>
+                </div>
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>
