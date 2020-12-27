@@ -513,7 +513,7 @@ const MainUpper = () => {
                         </Grid>
                     </Grid>
                     <Grid item lg={6} md sm={6} xs={12} align="center" justify="center">
-                        <img src="img/ideas2.png" className={classes.childImg4}></img>
+                        <img src="img/icons.png" className={classes.childImg4}></img>
                     </Grid>
                 </Grid>
             </Grid>
@@ -563,7 +563,7 @@ const MainUpper = () => {
                         </Grid>
                     </Box>
                     <Grid item lg={6} md sm={6} xs={12}>
-                        <img src="img/study.png" className={classes.childImg5}></img>
+                        <img src="img/sitting.png" className={classes.childImg5}></img>
                     </Grid>
                     <Box component={Grid} item lg={6} md sm={6} xs={12} display={{ xs: "none", lg: "block", md: "block", sm: "block" }}>
                         <Grid container direction="column" className={classes.subsection5}>
