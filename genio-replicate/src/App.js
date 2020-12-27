@@ -7,6 +7,7 @@ import {
 import Home from './Home.js';
 import TnC from './TnC.js';
 import Privacy from './Privacy.js';
+import Verify from './Verify';
 
 const App = () =>{
   return (
@@ -17,6 +18,9 @@ const App = () =>{
         </Route>
         <Route exact path="/tnc">
           <TnC />
+        </Route>
+        <Route path="/verify/:id">
+          <Verify />
         </Route>
         <Route exact path="/">
           <Home />
