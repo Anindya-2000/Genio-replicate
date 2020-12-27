@@ -116,7 +116,7 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-            <Link to="/tnc" style={{textDecoration: 'none', color: 'black'}}><div style={{ display: 'flex' }}>
+            <Link to="/" style={{textDecoration: 'none', color: 'black'}}><div style={{ display: 'flex' }}>
                     <img src="https://d5c8j8afeo6fv.cloudfront.net/logo.png" className={classes.logo}></img>
                     <p style={{ fontSize: 40, fontFamily: 'Finger Paint' }}>GENIO</p>
                 </div></Link>
