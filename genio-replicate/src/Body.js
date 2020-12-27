@@ -423,7 +423,7 @@ const Body = () => {
                         </p>
                             </Grid>
                             <Grid item className={classes.playStore}>
-                                <a href="#" style={{ "textDecoration": "none" }}>
+                                <a href="https://play.google.com/store/apps/details?id=com.genioclub.app" style={{ "textDecoration": "none" }}>
                                     <img src="img/google-play-en.png" style={{ "maxWidth": "100%", "height": "52px" }}></img>
                                 </a>
                             </Grid>
@@ -533,11 +533,6 @@ const Body = () => {
                             </p>
                             </Grid>
                             <Grid item>
-                                {/* <div className={classes.subsection5_list}>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Curated</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Informational</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Safe for children</div>
-                            </div> */}
                                 <div class={classes.subsection5_list}>
                                     <div class={classes.subsection5_list_item}>
                                         <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
