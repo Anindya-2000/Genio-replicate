@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     subsection1_text1: {
         color: "#35423c",
         fontWeight: "lighter",
-        fontSize: "2.8em",
+        fontSize: "2.57em",
         lineHeight: "1.2",
         margin: "0 0 17px",
         whiteSpace: "pre-line",
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     subsection1_text2: {
         color: "#5b7167",
         fontWeight: 400,
-        fontSize: "1.3em",
+        fontSize: "1.15em",
         lineHeight: "1.5",
         margin: 0,
         whiteSpace: "pre-line",
@@ -115,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     subsection2_text1: {
         color: "#35423c",
         fontWeight: "500",
-        fontSize: "2.0em",
+        fontSize: "1.8em",
         lineHeight: "1.1em",
         margin: "0 0 8px",
         whiteSpace: "pre-line",
@@ -180,7 +180,7 @@ const useStyles = makeStyles((theme) => ({
     subsection3_text1: {
         color: "#35423c",
         fontWeight: "300",
-        fontSize: "2.2em",
+        fontSize: "1.8em",
         lineHeight: "1.3em",
         margin: "0 0 5px",
         whiteSpace: "pre-line",
@@ -332,7 +332,7 @@ const useStyles = makeStyles((theme) => ({
     subsection5_text1: {
         color: "#35423c",
         fontWeight: "300",
-        fontSize: "2.2em",
+        fontSize: "1.9em",
         lineHeight: "1.3em",
         margin: "0 0 5px",
         whiteSpace: "pre-line",
@@ -425,13 +425,13 @@ const MainUpper = () => {
                             </Grid>
                             <Grid item className={classes.playStore}>
                                 <a href="#" style={{ "textDecoration": "none" }}>
-                                    <img src="https://landen.imgix.net/shared/google-play-en.png?trim=auto" style={{ "maxWidth": "100%", "height": "52px" }}></img>
+                                    <img src="img/google-play-en.png" style={{ "maxWidth": "100%", "height": "52px" }}></img>
                                 </a>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid item lg={5} md sm={5} xs={12}>
-                        <img src="https://landen.imgix.net/lv76colfak30/assets/vxv9jwpl.png?w=1200&h=900&fit=max" className={classes.childImg1}></img>
+                        <img src="img/two-childs.png" className={classes.childImg1}></img>
                     </Grid>
                 </Grid>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className={classes.section1Svg}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,64C1120,21,1280,11,1360,5.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
@@ -454,7 +454,7 @@ const MainUpper = () => {
                         </Grid>
                     </Grid>
                     <Grid item lg={6} md sm={6} xs={12} align="center">
-                        <img src="https://landen.imgix.net/lv76colfak30/assets/hewjjvi0.png?w=350&h=350" className={classes.childImg2}></img>
+                        <img src="img/discuss.png" className={classes.childImg2}></img>
                     </Grid>
                 </Grid>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" style={{ "position": "relative", "bottom": "3px" }}><path fill="rgba(201, 231, 252, 1)" fill-opacity="1" d="M0,96L80,101.3C160,107,320,117,480,106.7C640,96,800,64,960,64C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
@@ -477,7 +477,7 @@ const MainUpper = () => {
                         </Grid>
                     </Box>
                     <Grid item lg={6} md sm={6} xs={12}>
-                        <img src="https://landen.imgix.net/lv76colfak30/assets/vnlikoii.png?w=1200&h=900&fit=max" className={classes.childImg3}></img>
+                        <img src="img/ideas.png" className={classes.childImg3}></img>
                     </Grid>
                     <Box component={Grid} item lg={6} md sm={6} xs={12} display={{ xs: "none", lg: "block", md: "block", sm: "block" }}>
                         <Grid container direction="column" className={classes.subsection3}>
