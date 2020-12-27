@@ -378,6 +378,8 @@ const useStyles = makeStyles((theme) => ({
     subsection5_list_item:{
         marginRight: 20,
         marginBottom: 20,
+        alignItems: "center",
+        display: "flex",
     },
     tick:{
         color: "#66a766",
@@ -531,10 +533,30 @@ const MainUpper = () =>{
                             </p>
                         </Grid>
                          <Grid item>
-                            <div className={classes.subsection5_list}>
+                            {/* <div className={classes.subsection5_list}>
                                 <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Curated</div>
                                 <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Informational</div>
                                 <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Safe for children</div>
+                            </div> */}
+                            <div class={classes.subsection5_list}>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Curated
+                                </div>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Informational
+                                </div>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Safe for Children
+                                </div>
                             </div>
                         </Grid> 
                         
@@ -556,10 +578,25 @@ const MainUpper = () =>{
                             </p>
                         </Grid>
                         <Grid item xs={12}>
-                            <div className={classes.subsection5_list}>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Curated</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Informational</div>
-                                <div className={classes.subsection5_list_item}><DoneIcon className={classes.tick} />Safe for children</div>
+                        <div class={classes.subsection5_list}>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Curated
+                                </div>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Informational
+                                </div>
+                                <div class={classes.subsection5_list_item}>
+                                    <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66"><polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775"></polygon></g></g>
+                                    </svg>
+                                    Safe for Children
+                                </div>
                             </div>
                         </Grid>
                     </Grid>
