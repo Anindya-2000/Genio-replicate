@@ -424,7 +424,7 @@ const Body = () => {
                             </Grid>
                             <Grid item className={classes.playStore}>
                                 <a href="https://play.google.com/store/apps/details?id=com.genioclub.app" style={{ "textDecoration": "none" }}>
-                                    <img src="img/google-play-en.png" style={{ "maxWidth": "100%", "height": "52px" }}></img>
+                                    <img src="https://d5c8j8afeo6fv.cloudfront.net/google-play-en.png" style={{ "maxWidth": "100%", "height": "52px" }}></img>
                                 </a>
                             </Grid>
                         </Grid>
