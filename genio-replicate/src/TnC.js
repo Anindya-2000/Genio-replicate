@@ -6,6 +6,11 @@ import Header from "./Header"
 import Footer from "./footer.js"
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
+
   let id = 0
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-device-height: 600px)'
@@ -62,7 +67,7 @@ function App() {
 <h3 dir="ltr" >THIRD PARTY CONTENTS</h3>
 <p dir="ltr" className="docCss"><span className="docSpan">Links on the Services to third party websites are provided solely for Your convenience. If You use these links, You are no longer using the Services. Genio has not reviewed these third party websites and does not control and is not responsible for these websites or their content or availability. Genio therefore does not endorse or make any representations about them, or any material found on them, or any results that may be obtained from using them. If You decide to access any of the third party websites linked to the Services, you do so entirely at Your own risk. We cannot and will not assure that other users are or will be complying with the foregoing rules or any other provisions of these Terms of Use, and, as between You and Us, You hereby assume all risk of harm or injury resulting from any such lack of compliance. You may link to section of the Services only with the prior written consent of Genio and subject always to the obligations set out in this Agreement. If You wish to do so, please contact Genio using the contact details shown on the &ldquo;Contact Us&rdquo; section of the Services.</span></p>
 <h3 dir="ltr" >PRIVACY</h3>
-<p dir="ltr" className="docCss"><span className="docSpan">Genio&rsquo;s Privacy Policy applies to use of these Services, and its terms are made a part of these Terms of Use by this reference. To view Genio&rsquo;s Privacy Policy, please visit&nbsp;</span><a href="https://genio.app/privacy-policy" ><span>https://genio.app/privacy-policy</span></a><span>&nbsp;. Additionally, by using the Services, You acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information You send to the Services may be read or intercepted by others, even if there is a special notice that a particular transmission is encrypted.</span></p>
+<p dir="ltr" className="docCss"><span className="docSpan">Genio&rsquo;s Privacy Policy applies to use of these Services, and its terms are made a part of these Terms of Use by this reference. To view Genio&rsquo;s Privacy Policy, please visit&nbsp;</span><a href="https://genio.app/privacy" ><span>https://genio.app/privacy</span></a><span>&nbsp;. Additionally, by using the Services, You acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information You send to the Services may be read or intercepted by others, even if there is a special notice that a particular transmission is encrypted.</span></p>
 <h3 dir="ltr" >COMMUNICATIONS</h3>
 <p dir="ltr" className="docCss"><span className="docSpan">When You use the Services or send emails or other data, information or communication to Us, You agree and understand that You are communicating with Us through electronic records and You consent to receive communications via electronic records from Us periodically and as and when required. We may communicate with You by email or by such other mode of communication, electronic or otherwise.</span></p>
 <h3 dir="ltr" >INTELLECTUAL PROPERTY RIGHTS</h3>

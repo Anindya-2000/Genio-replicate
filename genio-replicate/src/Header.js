@@ -4,6 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from "@material-ui/core/Box";
 import './css/Drawer.css';
+import {
+    BrowserRouter as Router,
+    Link
+  } from "react-router-dom";
 import { useState, setState, useEffect } from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -112,10 +116,10 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-                <a href={'/'} style={{ display: 'flex', textDecoration:'none', color:'inherit' }}>
+            <Link to="/tnc"  className="footer-link"><div style={{ display: 'flex' }}>
                     <img src="https://d5c8j8afeo6fv.cloudfront.net/logo.png" className={classes.logo}></img>
                     <p style={{ fontSize: 40, fontFamily: 'Finger Paint' }}>GENIO</p>
-                </a>
+                </div></Link>
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>

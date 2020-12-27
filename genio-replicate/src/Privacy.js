@@ -6,6 +6,9 @@ import Footer from "./footer.js"
 
 function App() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
   const data = () => {
     return (
         <React.Fragment>
