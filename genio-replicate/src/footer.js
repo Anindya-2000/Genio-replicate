@@ -1,9 +1,14 @@
 import React from 'react';
-import { Grid, Typography, Link, IconButton } from '@material-ui/core'
+import { Grid, Typography, IconButton } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import {
+    BrowserRouter as Router,
+    Link
+  } from "react-router-dom";
+
 import './css/footer.css';
 const styles = makeStyles((theme) => ({
     iconStyle: {
@@ -50,8 +55,8 @@ export default function footer() {
                         <span className="copyright">© 2020 Genio App</span>
                     </Grid>
                     <div>
-                        <a href="#" className="footer-link">Terms of Service</a>
-                        <a href="#" className="footer-link">Privacy Policy</a>
+                        <Link to="/tnc"  className="footer-link">Terms of Service</Link>
+                        <Link to="/privacy"  className="footer-link">Privacy Policy</Link>
                     </div>
                 </Grid>
             </Grid>
