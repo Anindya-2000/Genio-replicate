@@ -16,12 +16,11 @@ const styles = makeStyles((theme) => ({
         color: "#eaefec",
         fontSize: "26px",
         alignContent: "center",
-        justifyContent: "flex-end",
         [theme.breakpoints.down("md")]: {
             paddingRight: "10px",
         },
         [theme.breakpoints.down("xs")]: {
-            paddingLeft: "10px",
+            paddingBottom: "10px",
         }
     },
     footerLeft: {
@@ -34,7 +33,7 @@ const styles = makeStyles((theme) => ({
             paddingLeft: "20px",
         },
         [theme.breakpoints.down("xs")]: {
-            paddingLeft: "10px",
+            padding: "20px 0px 0px 10px",
         }
     }
 }));
@@ -45,7 +44,7 @@ export default function footer() {
     const classes = styles();
     return (
         <Grid container spacing={0} className="root">
-            <Grid item md={8} sm={8} xs={7}>
+            <Grid item md={8} sm={8} xs={12}>
                 <Grid container spacing={0} className={classes.footerLeft}>
                     <Grid item xs={12}>
                         <span className="copyright">© 2020 Genio App</span>
@@ -56,7 +55,7 @@ export default function footer() {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container item md={4} sm={4} xs={5} className={classes.footerRight}>
+            <Grid container item md={4} sm={4} xs={12} className={classes.footerRight}>
                 <IconButton >
                     <TwitterIcon className="icon" />
                 </IconButton>
