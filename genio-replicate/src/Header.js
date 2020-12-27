@@ -113,7 +113,7 @@ const Header = () => {
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>
-                <a href="#" style={{ "textDecoration": "none" }}>
+                <a href="https://play.google.com/store/apps/details?id=com.genioclub.app" style={{ "textDecoration": "none" }}>
                     <Button disableRipple={true} className={classes.downloadBtn} style={{ backgroundColor: 'transparent' }}>
                         Download App
                     </Button>
@@ -133,7 +133,7 @@ const Header = () => {
             <div className="headerMenu__wrapper DontClose" style={{ "background-color": "#ffffff" }}>
                 <ul className="headerMenu__links DontClose">
                     <li>
-                        <a className="drawerLink DontClose" href="#">
+                        <a className="drawerLink DontClose" href="https://play.google.com/store/apps/details?id=com.genioclub.app">
                             Download App
                             <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg" className="DontClose">
                                 <path className="DontClose" d="M9.557 7H1a1 1 0 1 1 0-2h8.586L7.007 2.421a1 1 0 0 1 1.414-1.414l4.243 4.243c.203.202.3.47.292.736a.997.997 0 0 1-.292.735L8.42 10.964A1 1 0 1 1 7.007 9.55L9.557 7z" fill="#51a3ff"></path>
