@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         paddingTop: 70,
         height: "auto",
+        fontFamily: "'Montserrat', sans-serif",
     },
     section1: {
         padding: "50px 30px 40px",
