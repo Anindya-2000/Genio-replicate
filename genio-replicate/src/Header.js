@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from "@material-ui/core/Box";
-import './Drawer.css';
+import './css/Drawer.css';
 import { useState, setState, useEffect } from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -109,7 +109,7 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-                <img src="https://landen.imgix.net/lv76colfak30/assets/xcwpfkou.png?w=400" className={classes.logo}></img>
+                <img src="img/genio.png" className={classes.logo}></img>
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>
