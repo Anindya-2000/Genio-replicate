@@ -12,6 +12,32 @@ const styles = makeStyles((theme) => ({
         '& svg': {
             fontSize: 26
         }
+    },
+    footerRight:{
+        paddingRight:"10%", 
+        color: "#eaefec",
+        fontSize: "26px",
+        alignContent:"center",
+        justifyContent: "flex-end",
+        [theme.breakpoints.down("md")]:{
+            paddingRight:"10px",
+        },
+        [theme.breakpoints.down("xs")]:{
+            paddingLeft:"10px",
+        }
+    },
+    footerLeft:{
+        paddingLeft:"15%",
+        paddingTop:"30px",
+        paddingBottom:"30px",
+        fontSize: 12,
+        alignContent:"center",
+        [theme.breakpoints.down("md")]:{
+            paddingLeft:"20px",
+        },
+        [theme.breakpoints.down("xs")]:{
+            paddingLeft:"10px",
+        }
     }
 }));
 
@@ -21,8 +47,8 @@ export default function footer(){
     const classes= styles();
     return(
         <Grid container spacing={0} className="root">
-            <Grid item md={9} sm={9} xs={12}>
-                <Grid container spacing={0} className="footer-left">
+            <Grid item md={8} sm={8} xs={7}>
+                <Grid container spacing={0} className={classes.footerLeft}>
                     <Grid item xs={12}>
                         <span className="copyright">© 2020 Genio App</span>
                     </Grid>
@@ -32,7 +58,7 @@ export default function footer(){
                     </div>
                 </Grid>
             </Grid>
-            <Grid item md={3} sm={3} xs={12} className="footer-right">
+            <Grid container item md={4} sm={4} xs={5} className={classes.footerRight}>
                 <IconButton >
                     <TwitterIcon className="icon"/>
                 </IconButton>
