@@ -7,7 +7,7 @@ export default function improve() {
     return (
         <Grid container spacing={0}>
             <Grid item sm={6} xs={12} className="image">
-                <img src='img/sitting.png' className="sitting-img" alt="" />
+                <img src='https://d5c8j8afeo6fv.cloudfront.net/sitting.png' className="sitting-img" alt="" />
             </Grid>
             <Grid item sm={6} xs={12} className="text">
                 <Grid container spacing={0} >
