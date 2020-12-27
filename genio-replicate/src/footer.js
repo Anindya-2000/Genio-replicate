@@ -24,22 +24,8 @@ export default function footer(){
             <Grid item md={9} sm={6} xs={12}>
                 <Grid container spacing={0} className="footer-left">
                     <Grid item xs={12}>
-                        {/* <Typography className="copyright">
-                        {'© '}
-                        <Link className="footer-link" href="https://material-ui.com/">
-                        Genio App
-                        </Link>{' '}
-                        {new Date().getFullYear()}
-                        {'.'}
-                        </Typography> */}
                         <span className="copyright">© 2020 Genio App</span>
                     </Grid>
-                    {/* <Grid item xs={6}>
-                        <Link href="#" className="footer-link">Termsof Services</Link>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Link href="#" className="footer-link">Privacy Policy</Link>
-                    </Grid> */}
                     <div>
                         <a href="#" className="footer-link">Terms of Service</a>
                         <a href="#" className="footer-link">Privacy Policy</a>
@@ -48,13 +34,13 @@ export default function footer(){
             </Grid>
             <Grid item md={3} sm={6} xs={12} className="footer-right">
                 <IconButton >
-                    <TwitterIcon fontSize="large" className="icon"/>
+                    <TwitterIcon className="icon"/>
                 </IconButton>
                 <IconButton  >
-                    <LinkedInIcon fontSize="large" className="icon"/>
+                    <LinkedInIcon className="icon"/>
                 </IconButton>
                 <IconButton  >
-                    <FacebookIcon fontSize="large" className="icon"/>
+                    <FacebookIcon className="icon"/>
                 </IconButton>
             </Grid>
         </Grid>

@@ -37,17 +37,27 @@
     padding: 15px 30px; 
     color: #eaefec;
     font-size: 26px;
-    padding-bottom: 5px;
+    align-items: center;
 }
 
 .icon{
     color: #eaefec;
     width: 26px;
     padding: 0;
-    font-size: 26px;
+    height: 26px;
 }
 
 @media only screen and (max-width: 830px){
+    .footer-right{
+        padding: 10px 0 10px 0;
+    }
+    .footer-left{
+        padding: 10px 0px 0px 15px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
     .footer-right{
         padding: 0 0 10px 0;
     }
