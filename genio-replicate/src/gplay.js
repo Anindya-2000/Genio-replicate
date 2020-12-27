@@ -10,7 +10,7 @@ export default function gplay() {
             </Grid>
             <Grid item xs={12} className="gplay-container">
                 <a href = "https://play.google.com/store/apps/details?id=com.genioclub.app">
-                    <img src="img/google-play-en.png" alt="" className="gplay" />
+                    <img src="https://d5c8j8afeo6fv.cloudfront.net/google-play-en.png" alt="" className="gplay" />
                 </a>
             </Grid>
         </Grid>
