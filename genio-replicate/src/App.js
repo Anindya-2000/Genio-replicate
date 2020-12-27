@@ -11,7 +11,7 @@ import Verify from './Verify';
 
 const App = () =>{
   return (
-    <Router>
+    <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Switch>
         <Route exact path="/privacy">
           <Privacy />
