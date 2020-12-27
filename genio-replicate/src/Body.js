@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         paddingTop: 70,
         height: "auto",
+        fontFamily: "'Montserrat', sans-serif",
     },
     section1: {
         padding: "50px 30px 40px",
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     subsection1_text1: {
         color: "#35423c",
         fontWeight: "lighter",
-        fontSize: "2.8em",
+        fontSize: "2.57em",
         lineHeight: "1.2",
         margin: "0 0 17px",
         whiteSpace: "pre-line",
@@ -54,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     subsection1_text2: {
         color: "#5b7167",
         fontWeight: 400,
-        fontSize: "1.3em",
+        fontSize: "1.15em",
         lineHeight: "1.5",
         margin: 0,
         whiteSpace: "pre-line",
@@ -113,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
     subsection2_text1: {
         color: "#35423c",
         fontWeight: "500",
-        fontSize: "2.0em",
+        fontSize: "1.8em",
         lineHeight: "1.1em",
         margin: "0 0 8px",
         whiteSpace: "pre-line",
@@ -178,7 +179,7 @@ const useStyles = makeStyles((theme) => ({
     subsection3_text1: {
         color: "#35423c",
         fontWeight: "300",
-        fontSize: "2.2em",
+        fontSize: "1.8em",
         lineHeight: "1.3em",
         margin: "0 0 5px",
         whiteSpace: "pre-line",
@@ -330,7 +331,7 @@ const useStyles = makeStyles((theme) => ({
     subsection5_text1: {
         color: "#35423c",
         fontWeight: "300",
-        fontSize: "2.2em",
+        fontSize: "1.9em",
         lineHeight: "1.3em",
         margin: "0 0 5px",
         whiteSpace: "pre-line",
