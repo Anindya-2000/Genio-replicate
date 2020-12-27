@@ -109,7 +109,7 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Grid item style={{ "position": "absolute" }}>
-                <img src="https://landen.imgix.net/lv76colfak30/assets/xcwpfkou.png?w=400" className={classes.logo}></img>
+                <img src="img/genio.png" className={classes.logo}></img>
             </Grid>
 
             <Box component={Grid} item className={classes.downloadItem} display={{ xs: "none", sm: "block" }}>
