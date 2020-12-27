@@ -7,6 +7,8 @@ const App = () => {
     <div>
       <Header />
       <MainUpper />
+      <Gplay />
+    `<Footer />
     </div>
   )
 };
