@@ -6,7 +6,6 @@ import { Typography } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import Box from "@material-ui/core/Box";
 import DoneIcon from '@material-ui/icons/Done';
-
 const useStyles = makeStyles((theme) => ({
     MainRoot: {
         flexGrow: 1,
@@ -405,7 +404,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const MainUpper = () => {
+const Body = () => {
     const classes = useStyles();
     return (
         <Grid container direction="column" className={classes.MainRoot}>
@@ -609,4 +608,4 @@ const MainUpper = () => {
     )
 };
 
-export default MainUpper;
+export default Body;

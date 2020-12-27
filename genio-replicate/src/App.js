@@ -1,17 +1,14 @@
 import React from 'react';
 import loadable from '@loadable/component'
-import Gplay from './gplay.js'
-import Footer from './footer.js'
-
-const Header = loadable(() => import('./Header'));
-const MainUpper = loadable(() => import('./MainUpper'));
+const MainUpper = loadable(() => import('./Body'));
+const Footer = loadable(() => import('./footer'));
+const Gplay = loadable(() => import('./gplay'));
 const App = () => {
   return (
     <div>
-      <Header />
       <MainUpper />
       <Gplay />
-    ` <Footer />
+      <Footer />
     </div>
   )
 };

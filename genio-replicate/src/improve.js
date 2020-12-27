@@ -1,6 +1,6 @@
 import { Grid, Container, Typography } from '@material-ui/core';
 import React from 'react'
-import './improve.css'
+import './css/improve.css'
 import DoneIcon from '@material-ui/icons/Done';
 
 export default function improve() {
