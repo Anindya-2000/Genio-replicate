@@ -404,7 +404,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const MainUpper = () => {
+const Body = () => {
     const classes = useStyles();
     return (
         <Grid container direction="column" className={classes.MainRoot}>
@@ -608,4 +608,4 @@ const MainUpper = () => {
     )
 };
 
-export default MainUpper;
+export default Body;

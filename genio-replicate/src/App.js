@@ -4,12 +4,12 @@ import Gplay from './gplay.js'
 import Footer from './footer.js'
 
 const Header = loadable(() => import('./Header'));
-const MainUpper = loadable(() => import('./MainUpper'));
+const Body = loadable(() => import('./Body'));
 const App = () => {
   return (
     <div>
       <Header />
-      <MainUpper />
+      <Body />
       <Gplay />
     ` <Footer />
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-import './gplay.css';
+import './css/gplay.css';
 
 export default function gplay() {
     return (
